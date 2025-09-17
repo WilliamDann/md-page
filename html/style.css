@@ -50,8 +50,8 @@ a:visited {
 		padding-left: 24px
 }
 
-th, tr {
-		padding: 3px;
+th, tr, td {
+		padding: 5px;
 }
 
 ul {

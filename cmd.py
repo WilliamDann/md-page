@@ -1,6 +1,7 @@
 import term
 import md
 import config
+import watch
 
 def done():
     quit()
@@ -22,4 +23,7 @@ commands = {
     
     "c"         : compile,
     "compile"   : compile,
+
+    "w"         : watch.watch,
+    "watch"     : watch.watch,
 }
