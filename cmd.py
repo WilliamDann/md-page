@@ -11,6 +11,10 @@ def status():
 def compile():
     md.processDir(config.ARGS['input'], config.ARGS['output'])
 
+def help():
+    with open("help.md") as f:
+        print(f.read())
+
 # commands
 commands = {
     "q"         : done,
@@ -26,4 +30,7 @@ commands = {
 
     "w"         : watch.watch,
     "watch"     : watch.watch,
+
+    "help"      : help,
+    "?"         : help
 }
