@@ -30,7 +30,7 @@ def processFile(input_dir, output_dir, path):
 def processDir(input_dir, output_dir):
     for root, dirs, files in os.walk(input_dir):
         for file in files:
-            if ".md" not in file:
+            if ".md" not in file or "~" in file:
                 continue
             print(file)
             processFile(input_dir, output_dir, os.path.join(root, file))
